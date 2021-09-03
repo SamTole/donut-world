@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Donut World | Menu</title>
+</head>
+
+<body>
+  <!-- Showcase and navigation bar -->
+  <header class="showcase">
+    <div class="navbar">
+      <h1><i class="fas fa-utensils"></i> Donut World</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="productList.html" class="current">Menu</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="showcase-content">
+      <h1>Welcome to our Menu!</h1>
+      <a href="index.html" class="btn">Home</a>
+    </div>
+  </header>
+
+  <!-- Filter Section -->
+
+  <section class="filter">
+    <h2>Check out all our amazing options:</h2>
+    <div class="filter-wrap">
+      <div class="select-group">
+        <label for="sortBy">Sort By</label>
+        <select id="sortBy" name="sortBy">
+          <option value="name">Name</option>
+          <option value="price">Price</option>
+        </select>
+      </div>
+      <div class="select-group">
+        <label for="flavors">Flavors</label>
+        <select id="flavors" name="flavors">
+          <option value="select">Select a Flavor</option>
+          <option value="original">Original Flavors</option>
+          <option value="specialty">Specialty Flavors</option>
+        </select>
+      </div>
+      <div class="select-group">
+        <label for="category">Category</label>
+        <select id="category" name="category">
+          <option value="select">Select a Category</option>
+          <option value="donuts">Donuts</option>
+          <option value="munchkins">Munchkins</option>
+          <option value="drinks">Drinks</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+
+  <section id="menu">
+    <div class="menu-container">
+      <div class="menu-item"></div>
+      <div class="menu-item"></div>
+      <div class="menu-item"></div>
+      <div class="menu-item"></div>
+      <div class="menu-item"></div>
+      <div class="menu-item"></div>
+      <div class="menu-item"></div>
+      <div class="menu-item"></div>
+      <div class="menu-item"></div>
+      <div class="menu-item"></div>
+      <div class="menu-item"></div>
+      <div class="menu-item"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p><i class="fas fa-phone"></i> (123)-456-7890</p>
+      <p>
+        <i class="fas fa-address-book"></i> 32 Icing Street, Frosting, Donut
+        Land, 01234
+      </p>
+      <a href="https://facebook.com/"><i class="fab fa-facebook"></i> Our Facebook</a>
+      <a href="https://twitter.com/"><i class="fab fa-twitter"></i> Our Twitter</a>
+      <a href="https://youtube.com/"><i class="fab fa-youtube"></i> Our Youtube Channel</a>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/productList.js"></script>
+</body>
+
+</html>

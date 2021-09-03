@@ -1,0 +1,259 @@
+/* Import font from Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
+/* Core styling */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.7;
+  background: #333;
+  color: #fff;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p {
+  margin-bottom: 13px;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  border: #ccc 2px solid;
+  padding: 2px 25px;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #ccc;
+  color: #333;
+}
+
+/* Showcase and navigation bar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  height: 65px;
+  padding: 0 30px;
+  opacity: 0.9;
+}
+
+.navbar a {
+  font-size: 17px;
+  padding: 3px 0;
+  margin: 0 15px;
+  border-bottom: transparent 2px solid;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar a.current {
+  border-bottom: #ccc 2px solid;
+}
+
+.navbar a:hover {
+  border-bottom: #ccc 2px solid;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.showcase {
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  height: 70vh;
+  position: relative;
+}
+
+.showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 80%;
+}
+
+.showcase .showcase-content h1 {
+  font-size: 70px;
+}
+
+.showcase .showcase-content p {
+  font-size: 28px;
+  padding: 0 25px;
+}
+
+.showcase::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.showcase * {
+  z-index: 1;
+}
+
+/* Company blurb */
+
+.blurb {
+  padding: 18px 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #ccc;
+  color: #333;
+}
+
+.blurb .blurb-heading {
+  font-size: 25px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.blurb .blurb-heading p {
+  font-style: italic;
+  border-bottom: #333 2px dotted;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 10px;
+  padding: 20px 15px;
+}
+
+.footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+}
+
+.footer .footer-content p,
+.footer .footer-content a {
+  margin: 0 20px;
+  border-bottom: transparent 2px solid;
+  transition: 0.3s ease-in-out;
+}
+
+.footer .footer-content p:hover,
+.footer .footer-content a:hover {
+  border-bottom: #ccc 2px solid;
+}
+
+/* Menu Page */
+
+.filter {
+  background: #ccc;
+  color: #333;
+  padding: 35px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter .filter-wrap {
+  display: flex;
+  padding: 13px;
+}
+
+.filter .filter-wrap .select-group {
+  margin: 0 15px;
+}
+
+#menu {
+  background: #ccc;
+  color: #333;
+  padding: 0 40px 35px;
+}
+
+#menu .menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.2rem;
+}
+
+#menu .menu-container .menu-item {
+  background: #eee;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+#menu .menu-container .menu-item:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Mobile */
+
+@media(max-width: 1000px) {
+  #menu .menu-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 700px) {
+  .navbar h1 {
+    font-size: 23px;
+  }
+
+  .showcase .showcase-content h1 {
+    font-size: 55px;
+  }
+
+  .showcase .showcase-content p {
+    display: none;
+  }
+
+  .footer .footer-content {
+    flex-direction: column;
+    height: 150px;
+  }
+
+  .footer .footer-content > * {
+    padding: 4px 0;
+  }
+}
+
+@media(max-width: 600px) {
+  #menu .menu-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
